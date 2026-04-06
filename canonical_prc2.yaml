@@ -1,0 +1,121 @@
+title: "Rejuvenation or Stress Artifact? A Self-Verifying Benchmark for PRC2-Linked Epigenetic Fidelity"
+abstract: >
+  PRC2 Rejuvenation Benchmark is an offline, leakage-clean benchmark for
+  determining whether frozen aging and intervention signatures behave like
+  coherent PRC2-linked epigenetic fidelity loss, coherent PRC2-linked
+  restoration, mixed biology, confounded biology, or insufficiently covered
+  inputs, with additive fixed-rule source-family transfer evaluation.
+contract_version: "2026-03-29.prc2-v1"
+
+runtime:
+  pythonhashseed: 0
+  random_seed: 7
+  verification_tolerance: 1.0e-9
+
+paths:
+  freeze_dir: "data/freeze"
+  source_roster: "config/source_roster.tsv"
+  reference_registry: "config/reference_registry.tsv"
+  candidate_manifest: "config/panel_candidates.tsv"
+  module_manifest: "config/module_candidates.tsv"
+  signature_rows: "data/curation/all_signature_rows.tsv"
+  module_rows: "data/curation/all_module_rows.tsv"
+  benchmark_protocol: "config/benchmark_protocol.json"
+  source_provenance: "data/refs/source_provenance.md"
+  freeze_history: "data/refs/freeze_history.md"
+
+outputs:
+  manifest: "manifest.json"
+  normalization_audit: "normalization_audit.json"
+  signature_panel_manifest: "signature_panel_manifest.tsv"
+  module_manifest: "module_manifest.tsv"
+  per_signature_scores: "per_signature_scores.csv"
+  aggregate_benchmark_scores: "aggregate_benchmark_scores.csv"
+  blind_panel_predictions: "blind_panel_predictions.csv"
+  fidelity_direction_certificate: "fidelity_direction_certificate.json"
+  pillar_coherence_certificate: "pillar_coherence_certificate.json"
+  confounder_rejection_certificate: "confounder_rejection_certificate.json"
+  coverage_certificate: "coverage_certificate.json"
+  restoration_specificity_certificate: "restoration_specificity_certificate.json"
+  durable_core_certificate: "durable_core_certificate.json"
+  distilled_core: "distilled_core.tsv"
+  distillation_trace: "distillation_trace.json"
+  source_family_holdout_summary: "source_family_holdout_summary.csv"
+  source_family_holdout_details: "source_family_holdout_details.tsv"
+  source_family_holdout_certificate: "source_family_holdout_certificate.json"
+  source_family_holdout_heatmap: "source_family_holdout_heatmap.png"
+  benchmark_protocol: "benchmark_protocol.json"
+  verification: "verification.json"
+  public_summary: "public_summary.md"
+  prc2_direction_heatmap: "prc2_direction_heatmap.png"
+  restoration_vs_confounder_margin: "restoration_vs_confounder_margin.png"
+  rescue_comparison: "rescue_comparison.png"
+  blind_panel_summary: "blind_panel_summary.png"
+
+sources:
+  source_roster:
+    path: "config/source_roster.tsv"
+    sha256: "59f0b31d9f35412fd584d5f95d322f34eabbc0aaa724b787ddbe257b499174fd"
+  reference_registry:
+    path: "config/reference_registry.tsv"
+    sha256: "685e59fcb5493050746ea8b61cd898ac5c09d7ddba5b0527ee88be9a8cd0b5dd"
+  candidate_manifest:
+    path: "config/panel_candidates.tsv"
+    sha256: "42ff68cc87db6746ba8b0ef03211c6e4faab81957ab9f6dcb7786ad412c8a5ed"
+  module_manifest:
+    path: "config/module_candidates.tsv"
+    sha256: "509fb465e07d17545c54301f8c7832e0837dc7acd94d8613f91e1158e9b36a87"
+  signature_rows:
+    path: "data/curation/all_signature_rows.tsv"
+    sha256: "8a1841241d88f7cb3ec2f48e957fcf1c4171a26c2c8000a2e23044936891a6f6"
+  module_rows:
+    path: "data/curation/all_module_rows.tsv"
+    sha256: "8746a980707a432c69c95bffef2bd45b1b9e08eb50872c76738f00984f05778e"
+  benchmark_protocol:
+    path: "config/benchmark_protocol.json"
+    sha256: "5bd20f59be0f927b5005cdaf453ec9c961476b9f0743f5df7cbcae7ffb14a8ff"
+  source_provenance:
+    path: "data/refs/source_provenance.md"
+    sha256: "74a3800743154d72babbf3907f0e3ca3b4178408fa93d2a70d3d33106c25667f"
+  freeze_history:
+    path: "data/refs/freeze_history.md"
+    sha256: "bfce6ceb435ed8da04fa83ae2a2aad25ed4618db9783d613a56b75af389af8b3"
+
+freeze:
+  expected_primary_counts:
+    prc2_restoration: 8
+    prc2_loss: 6
+    confounded: 4
+    mixed: 2
+  expected_blind_counts:
+    prc2_restoration: 3
+    prc2_loss: 2
+    confounded: 2
+    mixed: 1
+  locked_curation_statuses:
+    - "dual_curator_agreed_locked"
+    - "dual_curator_adjudicated_locked"
+  allowed_review_statuses:
+    - "approved_locked"
+  allowed_machine_readable_statuses:
+    - "processed_ready"
+
+scoring:
+  coverage_min_fraction: 0.60
+  mixed_margin: 0.10
+  min_winner_score: 0.05
+  min_direction_stability: 0.70
+  min_specificity_stability: 0.70
+  ablation_subsample_fraction: 0.80
+  ablation_subsample_seeds: [11, 19, 29, 37, 43]
+  top_weight_trim_fraction: 0.20
+  null_draws: 256
+  random_baseline_seed: 101
+
+rescue:
+  minimum_core_size: 3
+  rescued_min_margin_improvement: 0.08
+  partial_min_margin_improvement: 0.03
+
+triage:
+  require_expected_class: false

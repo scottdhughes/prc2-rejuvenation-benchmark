@@ -1,0 +1,1128 @@
+{
+  "description": "Corrected PRC2 GSEA \u2014 KDM6B removed, \u00b1 EZH2 sensitivity, raw LOGO \u0394ES",
+  "corrections": {
+    "KDM6B_removed": "H3K27me3 demethylase (JMJD3) that antagonizes PRC2; biologically incorrect as restoration marker",
+    "EZH2_sensitivity": "EZH2 mRNA is an E2F target (Bracken et al. 2003); proliferation-confounded",
+    "robustness_replaced": "Negative robustness scores replaced with raw LOGO \u0394ES values and sign-flip counts"
+  },
+  "gene_sets": {
+    "PRC2_original_22": [
+      "AEBP2",
+      "CBX2",
+      "CBX4",
+      "CBX6",
+      "CBX7",
+      "CBX8",
+      "DNMT3A",
+      "DNMT3B",
+      "EED",
+      "EPOP",
+      "EZH1",
+      "EZH2",
+      "JARID2",
+      "KDM6A",
+      "KDM6B",
+      "MTF2",
+      "PALI1",
+      "PHF1",
+      "PHF19",
+      "RBBP4",
+      "RBBP7",
+      "SUZ12"
+    ],
+    "PRC2_no_KDM6B_21": [
+      "AEBP2",
+      "CBX2",
+      "CBX4",
+      "CBX6",
+      "CBX7",
+      "CBX8",
+      "DNMT3A",
+      "DNMT3B",
+      "EED",
+      "EPOP",
+      "EZH1",
+      "EZH2",
+      "JARID2",
+      "KDM6A",
+      "MTF2",
+      "PALI1",
+      "PHF1",
+      "PHF19",
+      "RBBP4",
+      "RBBP7",
+      "SUZ12"
+    ],
+    "PRC2_no_KDM6B_no_EZH2_20": [
+      "AEBP2",
+      "CBX2",
+      "CBX4",
+      "CBX6",
+      "CBX7",
+      "CBX8",
+      "DNMT3A",
+      "DNMT3B",
+      "EED",
+      "EPOP",
+      "EZH1",
+      "JARID2",
+      "KDM6A",
+      "MTF2",
+      "PALI1",
+      "PHF1",
+      "PHF19",
+      "RBBP4",
+      "RBBP7",
+      "SUZ12"
+    ],
+    "PRC2_no_demethylases_20": [
+      "AEBP2",
+      "CBX2",
+      "CBX4",
+      "CBX6",
+      "CBX7",
+      "CBX8",
+      "DNMT3A",
+      "DNMT3B",
+      "EED",
+      "EPOP",
+      "EZH1",
+      "EZH2",
+      "JARID2",
+      "MTF2",
+      "PALI1",
+      "PHF1",
+      "PHF19",
+      "RBBP4",
+      "RBBP7",
+      "SUZ12"
+    ]
+  },
+  "gsea_results": {
+    "Chondronasiou_2022": {
+      "PRC2_original_22": {
+        "ES": 0.27815,
+        "NES": 0.72116,
+        "p": 0.4105,
+        "hits": 21,
+        "set_size": 22,
+        "leading_edge_size": 7
+      },
+      "PRC2_no_KDM6B_21": {
+        "ES": 0.29778,
+        "NES": 0.75665,
+        "p": 0.3865,
+        "hits": 20,
+        "set_size": 21,
+        "leading_edge_size": 7
+      },
+      "PRC2_no_KDM6B_no_EZH2_20": {
+        "ES": 0.30114,
+        "NES": 0.75453,
+        "p": 0.3845,
+        "hits": 19,
+        "set_size": 20,
+        "leading_edge_size": 2
+      },
+      "PRC2_no_demethylases_20": {
+        "ES": 0.3212,
+        "NES": 0.80479,
+        "p": 0.348,
+        "hits": 19,
+        "set_size": 20,
+        "leading_edge_size": 7
+      }
+    },
+    "Roux_2022": {
+      "PRC2_original_22": {
+        "ES": 0.28487,
+        "NES": 0.56683,
+        "p": 0.449,
+        "hits": 21,
+        "set_size": 22,
+        "leading_edge_size": 8
+      },
+      "PRC2_no_KDM6B_21": {
+        "ES": 0.29657,
+        "NES": 0.58424,
+        "p": 0.4465,
+        "hits": 20,
+        "set_size": 21,
+        "leading_edge_size": 8
+      },
+      "PRC2_no_KDM6B_no_EZH2_20": {
+        "ES": 0.27717,
+        "NES": 0.54192,
+        "p": 0.4545,
+        "hits": 19,
+        "set_size": 20,
+        "leading_edge_size": 7
+      },
+      "PRC2_no_demethylases_20": {
+        "ES": 0.2904,
+        "NES": 0.5678,
+        "p": 0.454,
+        "hits": 19,
+        "set_size": 20,
+        "leading_edge_size": 7
+      }
+    },
+    "Gill_2022": {
+      "PRC2_original_22": {
+        "ES": -0.56847,
+        "NES": -1.07189,
+        "p": 0.23,
+        "hits": 20,
+        "set_size": 22,
+        "leading_edge_size": 2
+      },
+      "PRC2_no_KDM6B_21": {
+        "ES": -0.58068,
+        "NES": -1.08873,
+        "p": 0.219,
+        "hits": 19,
+        "set_size": 21,
+        "leading_edge_size": 2
+      },
+      "PRC2_no_KDM6B_no_EZH2_20": {
+        "ES": -0.51821,
+        "NES": -0.95961,
+        "p": 0.311,
+        "hits": 18,
+        "set_size": 20,
+        "leading_edge_size": 2
+      },
+      "PRC2_no_demethylases_20": {
+        "ES": -0.58177,
+        "NES": -1.07731,
+        "p": 0.2275,
+        "hits": 18,
+        "set_size": 20,
+        "leading_edge_size": 2
+      }
+    },
+    "Sahu_2024": {
+      "PRC2_original_22": {
+        "ES": -0.3893,
+        "NES": -0.6984,
+        "p": 0.5035,
+        "hits": 21,
+        "set_size": 22,
+        "leading_edge_size": 8
+      },
+      "PRC2_no_KDM6B_21": {
+        "ES": -0.40706,
+        "NES": -0.72685,
+        "p": 0.485,
+        "hits": 20,
+        "set_size": 21,
+        "leading_edge_size": 7
+      },
+      "PRC2_no_KDM6B_no_EZH2_20": {
+        "ES": -0.43295,
+        "NES": -0.76743,
+        "p": 0.451,
+        "hits": 19,
+        "set_size": 20,
+        "leading_edge_size": 6
+      },
+      "PRC2_no_demethylases_20": {
+        "ES": 0.41612,
+        "NES": 0.7658,
+        "p": 0.352,
+        "hits": 19,
+        "set_size": 20,
+        "leading_edge_size": 7
+      }
+    }
+  },
+  "logo_results": {
+    "Chondronasiou_2022": {
+      "AEBP2": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.7677,
+        "delta_ES": 0.011,
+        "sign_flip": false,
+        "loo_p": 0.388
+      },
+      "CBX2": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.7698,
+        "delta_ES": 0.0131,
+        "sign_flip": false,
+        "loo_p": 0.385
+      },
+      "CBX4": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.738,
+        "delta_ES": -0.0187,
+        "sign_flip": false,
+        "loo_p": 0.41
+      },
+      "CBX6": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.7341,
+        "delta_ES": -0.0225,
+        "sign_flip": false,
+        "loo_p": 0.411
+      },
+      "CBX7": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.838,
+        "delta_ES": 0.0814,
+        "sign_flip": false,
+        "loo_p": 0.347
+      },
+      "CBX8": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.8835,
+        "delta_ES": 0.1268,
+        "sign_flip": false,
+        "loo_p": 0.319
+      },
+      "DNMT3A": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.7673,
+        "delta_ES": 0.0107,
+        "sign_flip": false,
+        "loo_p": 0.388
+      },
+      "DNMT3B": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.7857,
+        "delta_ES": 0.029,
+        "sign_flip": false,
+        "loo_p": 0.38
+      },
+      "EED": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.8028,
+        "delta_ES": 0.0462,
+        "sign_flip": false,
+        "loo_p": 0.368
+      },
+      "EPOP": {
+        "baseline_NES": 0.7567,
+        "loo_NES": -0.6037,
+        "delta_ES": -1.3604,
+        "sign_flip": true,
+        "loo_p": 0.489
+      },
+      "EZH1": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.7569,
+        "delta_ES": 0.0003,
+        "sign_flip": false,
+        "loo_p": 0.396
+      },
+      "EZH2": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.7501,
+        "delta_ES": -0.0065,
+        "sign_flip": false,
+        "loo_p": 0.401
+      },
+      "JARID2": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.7385,
+        "delta_ES": -0.0181,
+        "sign_flip": false,
+        "loo_p": 0.409
+      },
+      "KDM6A": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.8001,
+        "delta_ES": 0.0435,
+        "sign_flip": false,
+        "loo_p": 0.371
+      },
+      "MTF2": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.7973,
+        "delta_ES": 0.0406,
+        "sign_flip": false,
+        "loo_p": 0.375
+      },
+      "PALI1": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.7538,
+        "delta_ES": -0.0029,
+        "sign_flip": false,
+        "loo_p": 0.404
+      },
+      "PHF1": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.8429,
+        "delta_ES": 0.0862,
+        "sign_flip": false,
+        "loo_p": 0.346
+      },
+      "PHF19": {
+        "baseline_NES": 0.7567,
+        "loo_NES": -0.7115,
+        "delta_ES": -1.4682,
+        "sign_flip": true,
+        "loo_p": 0.452
+      },
+      "RBBP4": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.7664,
+        "delta_ES": 0.0098,
+        "sign_flip": false,
+        "loo_p": 0.389
+      },
+      "RBBP7": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.7448,
+        "delta_ES": -0.0119,
+        "sign_flip": false,
+        "loo_p": 0.404
+      },
+      "SUZ12": {
+        "baseline_NES": 0.7567,
+        "loo_NES": 0.7508,
+        "delta_ES": -0.0059,
+        "sign_flip": false,
+        "loo_p": 0.401
+      }
+    },
+    "Roux_2022": {
+      "AEBP2": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.5967,
+        "delta_ES": 0.0125,
+        "sign_flip": false,
+        "loo_p": 0.458
+      },
+      "CBX2": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.6004,
+        "delta_ES": 0.0162,
+        "sign_flip": false,
+        "loo_p": 0.458
+      },
+      "CBX4": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.5437,
+        "delta_ES": -0.0405,
+        "sign_flip": false,
+        "loo_p": 0.463
+      },
+      "CBX6": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.5918,
+        "delta_ES": 0.0076,
+        "sign_flip": false,
+        "loo_p": 0.458
+      },
+      "CBX7": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.7974,
+        "delta_ES": 0.2132,
+        "sign_flip": false,
+        "loo_p": 0.352
+      },
+      "CBX8": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.6214,
+        "delta_ES": 0.0372,
+        "sign_flip": false,
+        "loo_p": 0.446
+      },
+      "DNMT3A": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.5936,
+        "delta_ES": 0.0094,
+        "sign_flip": false,
+        "loo_p": 0.458
+      },
+      "DNMT3B": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.5946,
+        "delta_ES": 0.0103,
+        "sign_flip": false,
+        "loo_p": 0.458
+      },
+      "EED": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.608,
+        "delta_ES": 0.0238,
+        "sign_flip": false,
+        "loo_p": 0.453
+      },
+      "EPOP": {
+        "baseline_NES": 0.5842,
+        "loo_NES": -0.6136,
+        "delta_ES": -1.1978,
+        "sign_flip": true,
+        "loo_p": 0.516
+      },
+      "EZH1": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.5877,
+        "delta_ES": 0.0035,
+        "sign_flip": false,
+        "loo_p": 0.459
+      },
+      "EZH2": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.5443,
+        "delta_ES": -0.0399,
+        "sign_flip": false,
+        "loo_p": 0.463
+      },
+      "JARID2": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.631,
+        "delta_ES": 0.0467,
+        "sign_flip": false,
+        "loo_p": 0.443
+      },
+      "KDM6A": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.5703,
+        "delta_ES": -0.0139,
+        "sign_flip": false,
+        "loo_p": 0.462
+      },
+      "MTF2": {
+        "baseline_NES": 0.5842,
+        "loo_NES": -0.5669,
+        "delta_ES": -1.1511,
+        "sign_flip": true,
+        "loo_p": 0.527
+      },
+      "PALI1": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.5812,
+        "delta_ES": -0.0031,
+        "sign_flip": false,
+        "loo_p": 0.453
+      },
+      "PHF1": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.6435,
+        "delta_ES": 0.0592,
+        "sign_flip": false,
+        "loo_p": 0.438
+      },
+      "PHF19": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.6699,
+        "delta_ES": 0.0857,
+        "sign_flip": false,
+        "loo_p": 0.427
+      },
+      "RBBP4": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.538,
+        "delta_ES": -0.0463,
+        "sign_flip": false,
+        "loo_p": 0.463
+      },
+      "RBBP7": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.5415,
+        "delta_ES": -0.0428,
+        "sign_flip": false,
+        "loo_p": 0.463
+      },
+      "SUZ12": {
+        "baseline_NES": 0.5842,
+        "loo_NES": 0.5468,
+        "delta_ES": -0.0374,
+        "sign_flip": false,
+        "loo_p": 0.463
+      }
+    },
+    "Gill_2022": {
+      "AEBP2": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.1009,
+        "delta_ES": -0.0121,
+        "sign_flip": false,
+        "loo_p": 0.218
+      },
+      "CBX2": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.0196,
+        "delta_ES": 0.0691,
+        "sign_flip": false,
+        "loo_p": 0.268
+      },
+      "CBX4": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.1793,
+        "delta_ES": -0.0906,
+        "sign_flip": false,
+        "loo_p": 0.153
+      },
+      "CBX6": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.075,
+        "delta_ES": 0.0137,
+        "sign_flip": false,
+        "loo_p": 0.242
+      },
+      "CBX7": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.0251,
+        "delta_ES": 0.0636,
+        "sign_flip": false,
+        "loo_p": 0.266
+      },
+      "CBX8": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.1941,
+        "delta_ES": -0.1053,
+        "sign_flip": false,
+        "loo_p": 0.151
+      },
+      "DNMT3A": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.0866,
+        "delta_ES": 0.0021,
+        "sign_flip": false,
+        "loo_p": 0.229
+      },
+      "DNMT3B": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.0096,
+        "delta_ES": 0.0791,
+        "sign_flip": false,
+        "loo_p": 0.279
+      },
+      "EED": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.0993,
+        "delta_ES": -0.0106,
+        "sign_flip": false,
+        "loo_p": 0.218
+      },
+      "EPOP": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.0868,
+        "delta_ES": 0.0019,
+        "sign_flip": false,
+        "loo_p": 0.233
+      },
+      "EZH1": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.0885,
+        "delta_ES": 0.0002,
+        "sign_flip": false,
+        "loo_p": 0.229
+      },
+      "EZH2": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -0.9571,
+        "delta_ES": 0.1316,
+        "sign_flip": false,
+        "loo_p": 0.315
+      },
+      "JARID2": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.0881,
+        "delta_ES": 0.0006,
+        "sign_flip": false,
+        "loo_p": 0.229
+      },
+      "KDM6A": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.0745,
+        "delta_ES": 0.0142,
+        "sign_flip": false,
+        "loo_p": 0.242
+      },
+      "MTF2": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.1325,
+        "delta_ES": -0.0437,
+        "sign_flip": false,
+        "loo_p": 0.192
+      },
+      "PALI1": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.0868,
+        "delta_ES": 0.0019,
+        "sign_flip": false,
+        "loo_p": 0.233
+      },
+      "PHF1": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.0872,
+        "delta_ES": 0.0015,
+        "sign_flip": false,
+        "loo_p": 0.229
+      },
+      "PHF19": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -0.9846,
+        "delta_ES": 0.1042,
+        "sign_flip": false,
+        "loo_p": 0.299
+      },
+      "RBBP4": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.0753,
+        "delta_ES": 0.0135,
+        "sign_flip": false,
+        "loo_p": 0.242
+      },
+      "RBBP7": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.0369,
+        "delta_ES": 0.0518,
+        "sign_flip": false,
+        "loo_p": 0.259
+      },
+      "SUZ12": {
+        "baseline_NES": -1.0887,
+        "loo_NES": -1.0771,
+        "delta_ES": 0.0116,
+        "sign_flip": false,
+        "loo_p": 0.238
+      }
+    },
+    "Sahu_2024": {
+      "AEBP2": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7196,
+        "delta_ES": 0.0072,
+        "sign_flip": false,
+        "loo_p": 0.47
+      },
+      "CBX2": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7897,
+        "delta_ES": -0.0628,
+        "sign_flip": false,
+        "loo_p": 0.425
+      },
+      "CBX4": {
+        "baseline_NES": -0.7268,
+        "loo_NES": 0.92,
+        "delta_ES": 1.6469,
+        "sign_flip": true,
+        "loo_p": 0.256
+      },
+      "CBX6": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7405,
+        "delta_ES": -0.0137,
+        "sign_flip": false,
+        "loo_p": 0.453
+      },
+      "CBX7": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7233,
+        "delta_ES": 0.0036,
+        "sign_flip": false,
+        "loo_p": 0.466
+      },
+      "CBX8": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7105,
+        "delta_ES": 0.0163,
+        "sign_flip": false,
+        "loo_p": 0.479
+      },
+      "DNMT3A": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7762,
+        "delta_ES": -0.0494,
+        "sign_flip": false,
+        "loo_p": 0.434
+      },
+      "DNMT3B": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7173,
+        "delta_ES": 0.0095,
+        "sign_flip": false,
+        "loo_p": 0.471
+      },
+      "EED": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7274,
+        "delta_ES": -0.0006,
+        "sign_flip": false,
+        "loo_p": 0.459
+      },
+      "EPOP": {
+        "baseline_NES": -0.7268,
+        "loo_NES": 0.7779,
+        "delta_ES": 1.5048,
+        "sign_flip": true,
+        "loo_p": 0.356
+      },
+      "EZH1": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7379,
+        "delta_ES": -0.011,
+        "sign_flip": false,
+        "loo_p": 0.454
+      },
+      "EZH2": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.762,
+        "delta_ES": -0.0351,
+        "sign_flip": false,
+        "loo_p": 0.439
+      },
+      "JARID2": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.763,
+        "delta_ES": -0.0362,
+        "sign_flip": false,
+        "loo_p": 0.439
+      },
+      "KDM6A": {
+        "baseline_NES": -0.7268,
+        "loo_NES": 0.7738,
+        "delta_ES": 1.5006,
+        "sign_flip": true,
+        "loo_p": 0.36
+      },
+      "MTF2": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7238,
+        "delta_ES": 0.003,
+        "sign_flip": false,
+        "loo_p": 0.465
+      },
+      "PALI1": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.722,
+        "delta_ES": 0.0049,
+        "sign_flip": false,
+        "loo_p": 0.475
+      },
+      "PHF1": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7232,
+        "delta_ES": 0.0037,
+        "sign_flip": false,
+        "loo_p": 0.466
+      },
+      "PHF19": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7704,
+        "delta_ES": -0.0435,
+        "sign_flip": false,
+        "loo_p": 0.437
+      },
+      "RBBP4": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7684,
+        "delta_ES": -0.0416,
+        "sign_flip": false,
+        "loo_p": 0.437
+      },
+      "RBBP7": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7586,
+        "delta_ES": -0.0317,
+        "sign_flip": false,
+        "loo_p": 0.439
+      },
+      "SUZ12": {
+        "baseline_NES": -0.7268,
+        "loo_NES": -0.7242,
+        "delta_ES": 0.0027,
+        "sign_flip": false,
+        "loo_p": 0.464
+      }
+    }
+  },
+  "fdr_comparison": {
+    "Chondronasiou_2022": {
+      "HALLMARK_E2F_TARGETS": {
+        "p": 0.0005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.00167,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "p": 0.0005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.00167,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_INTERFERON_ALPHA_RESPONSE": {
+        "p": 0.0505,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.08667,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "p": 0.3805,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.45611,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "HALLMARK_INFLAMMATORY_RESPONSE": {
+        "p": 0.1355,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.19357,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "HALLMARK_P53_PATHWAY": {
+        "p": 0.5715,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.5715,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "p": 0.0275,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.06875,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "p": 0.0005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.00167,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "PRC2_TARGETS_BENPORATH": {
+        "p": 0.052,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.08667,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "PRC2_COMPLEX_COMPONENTS": {
+        "p": 0.4105,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.45611,
+        "bh_sig": false,
+        "methods_agree": true
+      }
+    },
+    "Roux_2022": {
+      "HALLMARK_E2F_TARGETS": {
+        "p": 0.0005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.00125,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "p": 0.0005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.00125,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_INTERFERON_ALPHA_RESPONSE": {
+        "p": 0.0005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.00125,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "p": 0.0005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.00125,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_INFLAMMATORY_RESPONSE": {
+        "p": 0.0565,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.09417,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "HALLMARK_P53_PATHWAY": {
+        "p": 0.0535,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.09417,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "p": 0.1465,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.18312,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "p": 0.0895,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.12786,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "PRC2_TARGETS_BENPORATH": {
+        "p": 0.445,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.449,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "PRC2_COMPLEX_COMPONENTS": {
+        "p": 0.449,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.449,
+        "bh_sig": false,
+        "methods_agree": true
+      }
+    },
+    "Gill_2022": {
+      "HALLMARK_E2F_TARGETS": {
+        "p": 0.0005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.0025,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "p": 0.0005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.0025,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_INTERFERON_ALPHA_RESPONSE": {
+        "p": 0.026,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.04333,
+        "bh_sig": true,
+        "methods_agree": false
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "p": 0.0035,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.01167,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_INFLAMMATORY_RESPONSE": {
+        "p": 0.2275,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.23,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "HALLMARK_P53_PATHWAY": {
+        "p": 0.0145,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.029,
+        "bh_sig": true,
+        "methods_agree": false
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "p": 0.048,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.06857,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "p": 0.007,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.0175,
+        "bh_sig": true,
+        "methods_agree": false
+      },
+      "PRC2_TARGETS_BENPORATH": {
+        "p": 0.207,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.23,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "PRC2_COMPLEX_COMPONENTS": {
+        "p": 0.23,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.23,
+        "bh_sig": false,
+        "methods_agree": true
+      }
+    },
+    "Sahu_2024": {
+      "HALLMARK_E2F_TARGETS": {
+        "p": 0.0005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.001,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "p": 0.0005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.001,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_INTERFERON_ALPHA_RESPONSE": {
+        "p": 0.0005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.001,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "p": 0.0005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.001,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_INFLAMMATORY_RESPONSE": {
+        "p": 0.005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.00625,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_P53_PATHWAY": {
+        "p": 0.002,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.00286,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "p": 0.002,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.00286,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "p": 0.0005,
+        "bonferroni_sig": true,
+        "bh_fdr": 0.001,
+        "bh_sig": true,
+        "methods_agree": true
+      },
+      "PRC2_TARGETS_BENPORATH": {
+        "p": 0.0745,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.08278,
+        "bh_sig": false,
+        "methods_agree": true
+      },
+      "PRC2_COMPLEX_COMPONENTS": {
+        "p": 0.5035,
+        "bonferroni_sig": false,
+        "bh_fdr": 0.5035,
+        "bh_sig": false,
+        "methods_agree": true
+      }
+    }
+  },
+  "fdr_methods_agree": false
+}
