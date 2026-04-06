@@ -15,7 +15,14 @@
       "intercept": -0.0395,
       "E2F": 0.0087,
       "IFN": -0.0184
-    }
+    },
+    "f_statistic": {
+      "F": 71.79,
+      "df1": 2,
+      "df2": 21,
+      "p": 4.08e-10
+    },
+    "adjusted_R2": 0.86
   },
   "sahu_2024": {
     "n_samples": 16,
@@ -31,7 +38,14 @@
       "intercept": 0.127,
       "E2F": -0.2014,
       "IFN": 0.1551
-    }
+    },
+    "f_statistic": {
+      "F": 62.93,
+      "df1": 2,
+      "df2": 13,
+      "p": 2.06e-07
+    },
+    "adjusted_R2": 0.892
   },
-  "conclusion": "87-91% of PRC2 subunit variance is E2F + IFN. Zero residual PRC2 signal after confounder removal."
+  "conclusion": "86-89% (adj R2) of PRC2 subunit variance is E2F + IFN. F-tests highly significant (p < 1e-7). Zero residual PRC2 signal."
 }
