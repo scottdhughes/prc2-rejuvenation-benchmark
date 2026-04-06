@@ -1,0 +1,109 @@
+{
+  "description": "H3K27me3 ChIP-seq validation from Camacho et al. 2026 (GSE288574)",
+  "source": "Young (3mo, n=2) vs Old (22mo, n=3) mouse tail epidermis, H3K27me3 ChIP-seq bigwig files",
+  "method": "Mean signal in 4kb TSS-centered windows via pyBigWig",
+  "prc2_subunit_promoters": {
+    "mean_old_young_ratio": 0.95,
+    "n_genes": 13,
+    "stable_count": 11,
+    "results": {
+      "Ezh2": {
+        "young": 8.49,
+        "old": 7.85,
+        "ratio": 0.92,
+        "status": "STABLE"
+      },
+      "Ezh1": {
+        "young": 1.96,
+        "old": 2.06,
+        "ratio": 1.05,
+        "status": "STABLE"
+      },
+      "Suz12": {
+        "young": 4.8,
+        "old": 5.8,
+        "ratio": 1.21,
+        "status": "GAIN"
+      },
+      "Eed": {
+        "young": 0.73,
+        "old": 0.59,
+        "ratio": 0.81,
+        "status": "STABLE"
+      },
+      "Rbbp4": {
+        "young": 12.61,
+        "old": 12.59,
+        "ratio": 1.0,
+        "status": "STABLE"
+      },
+      "Rbbp7": {
+        "young": 2.92,
+        "old": 2.08,
+        "ratio": 0.71,
+        "status": "LOSS"
+      },
+      "Jarid2": {
+        "young": 1.4,
+        "old": 1.19,
+        "ratio": 0.85,
+        "status": "STABLE"
+      },
+      "Aebp2": {
+        "young": 1.58,
+        "old": 1.45,
+        "ratio": 0.92,
+        "status": "STABLE"
+      },
+      "Phf1": {
+        "young": 1.41,
+        "old": 1.43,
+        "ratio": 1.01,
+        "status": "STABLE"
+      },
+      "Mtf2": {
+        "young": 3.09,
+        "old": 2.71,
+        "ratio": 0.88,
+        "status": "STABLE"
+      },
+      "Phf19": {
+        "young": 3.82,
+        "old": 3.17,
+        "ratio": 0.83,
+        "status": "STABLE"
+      },
+      "Epop": {
+        "young": 30.05,
+        "old": 36.67,
+        "ratio": 1.22,
+        "status": "GAIN"
+      },
+      "Pali1": {
+        "young": 1.24,
+        "old": 1.23,
+        "ratio": 0.99,
+        "status": "STABLE"
+      }
+    }
+  },
+  "prc2_targets": {
+    "mean_old_young_ratio": 1.01,
+    "genes": {
+      "Hoxa1": 1.16,
+      "Hoxa9": 0.94,
+      "Sox2": 1.04,
+      "Pax6": 0.96,
+      "Dlx5": 0.96
+    }
+  },
+  "housekeeping_controls": {
+    "mean_old_young_ratio": 0.87,
+    "genes": {
+      "Actb": 0.74,
+      "Gapdh": 0.81,
+      "Rpl13a": 1.05
+    }
+  },
+  "conclusion": "H3K27me3 at PRC2 subunit promoters is stable between young and old (mean ratio 0.95), consistent with transcript-chromatin decoupling."
+}

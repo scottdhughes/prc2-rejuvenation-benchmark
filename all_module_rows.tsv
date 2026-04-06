@@ -3,14 +3,10 @@ prc2_loss_core	EZH2	down	1.2
 prc2_loss_core	SUZ12	down	1.1
 prc2_loss_core	EED	down	1.0
 prc2_loss_core	JARID2	down	0.9
-prc2_loss_core	CBX7	down	0.8
-prc2_loss_core	DNMT3A	down	0.7
 prc2_restoration_core	EZH2	up	1.2
 prc2_restoration_core	SUZ12	up	1.1
 prc2_restoration_core	EED	up	1.0
 prc2_restoration_core	JARID2	up	0.9
-prc2_restoration_core	CBX7	up	0.8
-prc2_restoration_core	DNMT3A	up	0.7
 ap1_senescence_stress	JUN	up	1.2
 ap1_senescence_stress	FOS	up	1.1
 ap1_senescence_stress	FOSL2	up	1.0
@@ -35,3 +31,5 @@ dna_damage_response	DDIT3	up	1.0
 dna_damage_response	BBC3	up	0.9
 dna_damage_response	MDM2	up	0.8
 dna_damage_response	TP53I3	up	0.7
+prc2_restoration_core	EPOP	up	0.8
+prc2_loss_core	EPOP	down	0.8

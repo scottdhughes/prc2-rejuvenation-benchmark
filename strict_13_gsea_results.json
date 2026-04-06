@@ -1,0 +1,111 @@
+{
+  "description": "Strict 13-gene PRC2 GSEA (core + PRC2.1/PRC2.2 accessories only, per Hauri 2016)",
+  "gene_set": [
+    "AEBP2",
+    "EED",
+    "EPOP",
+    "EZH1",
+    "EZH2",
+    "JARID2",
+    "MTF2",
+    "PALI1",
+    "PHF1",
+    "PHF19",
+    "RBBP4",
+    "RBBP7",
+    "SUZ12"
+  ],
+  "gsea_results": {
+    "Chondronasiou_2022": {
+      "NES": 1.097,
+      "p": 0.162,
+      "hits": 12,
+      "CI_95": [
+        -1.49,
+        1.51
+      ]
+    },
+    "Roux_2022": {
+      "NES": 0.807,
+      "p": 0.357,
+      "hits": 12,
+      "CI_95": [
+        -1.41,
+        1.42
+      ]
+    },
+    "Gill_2022": {
+      "NES": -1.105,
+      "p": 0.215,
+      "hits": 11,
+      "CI_95": [
+        -1.41,
+        1.44
+      ]
+    },
+    "Sahu_2024": {
+      "NES": 0.951,
+      "p": 0.238,
+      "hits": 12,
+      "CI_95": [
+        -1.4,
+        1.42
+      ]
+    }
+  },
+  "logo_results": {
+    "Chondronasiou_2022": {
+      "baseline_NES": 1.097,
+      "sign_flips": 0,
+      "most_volatile": "PHF19",
+      "max_delta": -0.38
+    },
+    "Roux_2022": {
+      "baseline_NES": 0.807,
+      "sign_flips": 0,
+      "most_volatile": "EPOP",
+      "max_delta": -0.2
+    },
+    "Gill_2022": {
+      "baseline_NES": -1.105,
+      "sign_flips": 0,
+      "most_volatile": "EZH2",
+      "max_delta": 0.19
+    },
+    "Sahu_2024": {
+      "baseline_NES": 0.951,
+      "sign_flips": 0,
+      "most_volatile": "EPOP",
+      "max_delta": 0.26
+    }
+  },
+  "variants": {
+    "strict_13": {
+      "Chond_p": 0.16,
+      "Roux_p": 0.36,
+      "Gill_p": 0.22,
+      "Sahu_p": 0.24
+    },
+    "original_22": {
+      "Chond_p": 0.41,
+      "Roux_p": 0.45,
+      "Gill_p": 0.23,
+      "Sahu_p": 0.5
+    },
+    "strict_minus_EZH2_12": {
+      "Chond_p": 0.14,
+      "Roux_p": 0.38,
+      "Gill_p": 0.34,
+      "Sahu_p": 0.3
+    },
+    "with_PRC1_CBXs_18": {
+      "Chond_p": 0.31,
+      "Roux_p": 0.46,
+      "Gill_p": 0.27,
+      "Sahu_p": 0.51
+    }
+  },
+  "mouse_msigdb_sensitivity": {
+    "note": "Mouse MH v2024.1.Mm Hallmarks produce near-identical results to Human H v2024.1.Hs. PRC2 gene symbols are identical across species. Max NES delta for E2F: <0.04; for G2M: <0.05."
+  }
+}
