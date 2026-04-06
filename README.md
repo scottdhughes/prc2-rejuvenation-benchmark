@@ -45,3 +45,17 @@ cd prc2-rejuvenation-benchmark
 ## License
 
 CC-BY 4.0
+
+## Deposited Analysis Outputs
+
+All key analytical outputs are pre-computed and deposited in this repository:
+- `strict_13_gsea_results.json` — GSEA NES/p-values, permutation 95% CIs, LOGO delta-ES, gene set variants, mouse MSigDB sensitivity
+- `chipseq_validation.json` — H3K27me3 Old/Young ratios at 13 PRC2 promoters + 5 targets + 3 controls
+- `ssgsea_regression.json` — Per-sample ssGSEA scores and confounder regression (R², coefficients, residual p-values)
+- `corrected_prc2_gsea.json` — Full GSEA for all PRC2 gene set variants (original 22, strict 13, ±EZH2, ±CBXs, ±DNMTs)
+
+These allow full verification of all paper claims without running the CLI pipeline.
+
+## Note on Self-Containment
+
+This repository is a companion reproducibility package. The full CLI tool (`prc2-rejuvenation-benchmark`) is distributed as a Python package in the main skill repository. However, all numerical claims in the paper can be verified from the pre-computed JSON outputs deposited here. The `.rnk` files allow independent GSEA verification with any standard tool (e.g., GSEA desktop, gseapy).
