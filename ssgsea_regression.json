@@ -1,0 +1,37 @@
+{
+  "description": "Per-sample ssGSEA + confounder regression (Gill n=24, Sahu n=16)",
+  "method": "Rank-based ssGSEA, OLS regression: PRC2_score ~ E2F_score + IFN_score",
+  "gill_2022": {
+    "n_samples": 24,
+    "n_mptr": 15,
+    "n_control": 9,
+    "prc2_target_treatment_effect": {
+      "p": 0.91,
+      "significant": false
+    },
+    "prc2_subunit_R2_confounders": 0.872,
+    "prc2_subunit_residual_p": 0.27,
+    "coefficients": {
+      "intercept": -0.0395,
+      "E2F": 0.0087,
+      "IFN": -0.0184
+    }
+  },
+  "sahu_2024": {
+    "n_samples": 16,
+    "n_osk": 8,
+    "n_gfp": 8,
+    "prc2_target_treatment_effect": {
+      "p": 0.98,
+      "significant": false
+    },
+    "prc2_subunit_R2_confounders": 0.906,
+    "prc2_subunit_residual_p": 0.73,
+    "coefficients": {
+      "intercept": 0.127,
+      "E2F": -0.2014,
+      "IFN": 0.1551
+    }
+  },
+  "conclusion": "87-91% of PRC2 subunit variance is E2F + IFN. Zero residual PRC2 signal after confounder removal."
+}
